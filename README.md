@@ -1,28 +1,50 @@
 # StoreFe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
 
-## Development server
+## Project Guidelines
+### Angular
+* STORE schematics: 
+use this schematics to create new lazy loaded pages
+```
+npm install
+```
+```
+ng g store:page pagename --route=routePath 
+```
+| Options | Alias | Description | Required |
+| ------------- |:-------------:| -----:| -----:|
+| --route=routePath | --r | adds path to app.routing.module | true |
+| --basic | --b | add basic structure to page | false |
+| --fullPage | --full | removes header and footer and adds custom header to page | false |
+| --accordion | --a | adds accordion component to page | false |
+| --stepper | --s | adds a stepper component to page| false |
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* don’t submit any code that has errors
+* when loading CMS content only load current language content
+* using onchange / docheck functions is not ideal so try to avoid them and never use them together
+* split long components into a number of smaller ones (eg. every section in one component)
+* test UI in desktop browsers (chrome, firefox, safari, edge)
+* test UI in mobile (IOS simulator)
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# store-fe
+### HTML and CSS
+* no inline style.
+* use bootstrap [gird](https://getbootstrap.com/docs/4.0/layout/grid/) (container, row, col)
+* use bootstrap [utilities classes](https://getbootstrap.com/docs/4.0/utilities) (d-flex, p-1)
+* use bootstrap [breakpoints](https://getbootstrap.com/docs/4.0/layout/overview/) (col-md-12, media query mixins)
+* use common style and reusable components. [here](https://localhost:4200/templates).
+* no fixed size or position (float, absolute, width). controlling size and position with grid will help with mobile view and arabic.
+* replace right and left with start and end. 
+  * add ``` @import 'src/common-style/mixins';``` 
+  * margin-left -> @include margin-start(2px);
+  * margin-right -> @include margin-end(2px);
+  * padding-left -> @include padding-start(2px);
+  * padding-right -> @include padding-end(2px);
+  * text-align: left -> text-align: start
+  * background-position: left -> background-position: var(--start)
+  * justify-content: left / start -> justify-content: flex-start
+  * float: left -> float: var(--start) // not recommended
+  * left: 2px -> @include start(2px); // not recommended
+* if you need to target a specific browser use ```@include browser(edge)``` (all options are listed in mixin file)
+* Use svgs when creating icons.
+* Use pngs when adding images.
+* Use [TinyPNG](https://tinypng.com/) to reduce images size. (if image's size is greater than 5mb contact Iain to provide a smaller image)

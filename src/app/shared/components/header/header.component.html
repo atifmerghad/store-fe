@@ -1,6 +1,37 @@
-<header class="header">
-   <p class="text-center " (click)="addNewItem('I am your child header')">
-       {{ "header.title" | translate}}
-   </p>
-  </header>
+<header>
+    <div  class="header1">
+        <p class="text-center ">
+            {{ "header.title" | translate}}
+        </p>
+    </div>
+
+   <div  class="header2">
+    <div     class="toolbar" role="banner">
+        <img
+          width="40"
+          alt="Store Logo"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+        />
+        <span> {{ "name" | translate }}</span>
+        
+        <div class="spacer"></div>
+        
+        <a aria-label="Angular on twitter" rel="noopener" href="#"  routerLink="/login">
+          <span  style=" margin:5px;">Login</span>
+        </a>
+        <a aria-label="Angular on twitter" rel="noopener" href="#"  routerLink="/register">
+          <span  style=" margin:5px;">Register</span>
+        </a>
+          <a aria-label="Angular on twitter" rel="noopener" href="#"   >
+            <span  style=" margin:5px;">AR</span>
+          </a>
+          <a aria-label="Angular on YouTube"   rel="noopener" href="#"  >
+            <span  style=" margin:5px;">EN</span>
+          </a>
+      </div>
+   </div>
+</header>
+
+
+  
   

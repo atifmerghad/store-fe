@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+.rtl{
+*{
+    font-family: "Almarai", sans-serif !important;
+}
+}
+
+.ltr{
+    *{
+        font-family: Raleway !important;
+    }
+}

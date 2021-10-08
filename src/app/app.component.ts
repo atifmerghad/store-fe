@@ -53,9 +53,4 @@ export class AppComponent  implements OnInit{
       console.log(this.direction);
     }
   
-
-    addItem(newItem: string) {
-      console.log("Hello my child : ",newItem)
-    }
-
 }

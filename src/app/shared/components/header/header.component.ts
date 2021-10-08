@@ -7,7 +7,7 @@ import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output() newItemEvent = new EventEmitter<string>();
+  @Output() selectLangEvent = new EventEmitter();
 
   constructor() { }
 
@@ -15,9 +15,7 @@ export class HeaderComponent implements OnInit {
   }
 
 
-  addNewItem(value: string) {
-    this.newItemEvent.emit(value);
-  }
+
 /*
   callParentselectLang(lang) {
     const url = this.langService.switchedURL();

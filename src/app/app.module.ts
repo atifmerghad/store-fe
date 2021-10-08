@@ -14,11 +14,14 @@ import {
   HTTP_INTERCEPTORS,
 } from "@angular/common/http";
 import { HeaderComponent } from './shared/components/header/header.component';
+import { SharedModule } from './shared/shared.module';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -35,8 +38,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
         deps: [HttpClient],
       },
       isolate: true,
-    }),
-  ],
+    })
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
