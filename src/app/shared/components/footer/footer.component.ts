@@ -12,4 +12,33 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sections = [
+    {
+      title: "Products",
+      title_ar: "المنتجات",
+      items: [
+        {
+          name:"FStore",
+          name_ar :"",
+          url: ""
+        },
+        {
+          name:"MDWordPress",
+          name_ar :"",
+          url: ""
+        },
+        {
+          name:"BrandFlow",
+          name_ar :"",
+          url: ""
+        },
+        {
+          name:"Bootstrap",
+          name_ar :"",
+          url: ""
+        }
+      ]
+    }
+  ]
+
 }

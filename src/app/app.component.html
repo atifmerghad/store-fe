@@ -1,26 +1,8 @@
-
 <div [dir]="direction" [ngClass]="(direction=='rtl')?'rtl':'ltr'"> 
-<!-- {'arabic': direction == 'rtl'}-->
-  <app-header></app-header>
-
-<div class="container" style="margin-top: 20px;">
-  <div class="row">
-      <ng-container *ngFor="let item of products">
-          <div class="card col-3" style="justify-content: center;">
-              <img src="{{item.image}}" alt="">
-              <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
-              <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
-              <p><strong>Price:</strong> ${{item.price}}</p>
-              <button class="btn btn-primary"   >Add to cart</button>
-          </div>
-      </ng-container>
-
-  </div>
-</div>
-
-</div>
-
+<app-header  *ngIf="!isFullPage"></app-header>
+ <router-outlet  *ngIf="!isFullPage"></router-outlet>
 <app-footer></app-footer>
-<router-outlet></router-outlet>
+
+</div>
 
 

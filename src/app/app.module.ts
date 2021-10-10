@@ -16,6 +16,7 @@ import {
 import { HeaderComponent } from './shared/components/header/header.component';
 import { SharedModule } from './shared/shared.module';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { ProductModule } from './product/product.module';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
         deps: [HttpClient],
       },
       isolate: true,
-    })
+    }),
+    ProductModule
     ],
   providers: [],
   bootstrap: [AppComponent]

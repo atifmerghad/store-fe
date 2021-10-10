@@ -7,8 +7,7 @@ import { environment } from "src/environments/environment";
 })
 export class ProductService {
   host = environment.host;
-
-
+  currentLang :any;
   constructor(private httpClient: HttpClient) {}
 
   getProducts() {

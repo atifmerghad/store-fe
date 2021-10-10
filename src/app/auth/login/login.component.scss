@@ -1,0 +1,405 @@
+.main {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+  }
+  #imglogo {
+    float: right;
+    margin-top: 30px;
+  }
+  .container-fluid {
+    width: 100%;
+    height: 112px;
+    box-shadow: inset 0 -1px 0 0 rgba(204, 204, 204, 0.5);
+    background-color: #ffffff;
+  }
+  .header {
+    width: 100%;
+    height: 112px;
+    box-shadow: inset 0 -1px 0 0 rgba(204, 204, 204, 0.5);
+    background-color: #ffffff;
+  }
+  a {
+    color: #228bc5 !important;
+  }
+  .jumbotran {
+    float: right;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 255px;
+  }
+  #path {
+    float: left;
+    width: 27px;
+    height: 27px;
+    padding-top: 30px;
+    /* opacity: 0.45;
+          background-color: #000000; */
+  }
+  .container {
+    max-width: 100% !important;
+  
+    /* height: 1052px; */
+  
+    background-color: #ffffff;
+  }
+  .login {
+    width: 381px;
+    height: 48px;
+    /* border-radius: 6px;
+      border: solid 2px #e3e3e3; */
+    background-color: #ffffff;
+  }
+  .Login {
+    /* width: 1046px; */
+    height: 59px;
+    border-style: solid;
+    border-width: 0.7px;
+    border-image-source: linear-gradient(273deg, #5ba7a0 100%, #1c4480 0%);
+    border-image-slice: 1;
+    background-image: linear-gradient(273deg, #5ca7a0, #1c4480);
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: 1.23px;
+    text-align: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Login-to-your-accoun {
+    background-image: linear-gradient(273deg, #5ca7a0, #1c4480);
+    font-family: Raleway;
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: 1.23px;
+    text-align: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .form-group {
+    max-width: 381px;
+    padding-top: 10px;
+  }
+  .form-control1 {
+    max-width: 381px;
+    height: 48px;
+    border-radius: 6px;
+    border: solid 2px #e3e3e3;
+    background-color: #ffffff;
+  }
+  /* #exdate{
+          width: 179px;
+          height: 48px;
+          border-radius: 6px;
+          border: solid 2px #e3e3e3;
+          background-color: #ffffff;
+        
+    } */
+  #butn {
+    width: 156px;
+    height: 44px;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    /* text-align: center; */
+    color: #ffffff;
+    border-radius: 30px;
+  }
+  .col-4 {
+    margin-top: -10% !important;
+    margin-left: 35px !important;
+  }
+  /* testing */
+  
+  #ic-info {
+    opacity: 0.4;
+  }
+  .main1 {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  #showpass {
+    margin-top: -36px;
+    float: left;
+    margin-left: 321px;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    color: #228bc5 !important;
+  }
+  .login-or {
+    position: relative;
+    font-size: 18px;
+    color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+  }
+  .Welcome-Back {
+    /* width: 1262px; */
+    background-image: linear-gradient(273deg, #5ca7a0, #1c4480 0%);
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.84;
+    letter-spacing: 0.82px;
+    text-align: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hr-or {
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  h3 {
+    text-align: center;
+    line-height: 300%;
+  }
+  input {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    color: #3b3b3b;
+  }
+  input:focus {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-image-source: linear-gradient(277deg, #5ba7a0 0%, #1c4480 100%);
+    border-image-slice: 1;
+    /* background-image: linear-gradient(to bottom, #ffffff, #ffffff), linear-gradient(277deg, #5ba7a0 100%, #1c4480 0%); */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 0 10px white;
+  }
+  select:focus {
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-image-source: linear-gradient(277deg, #5ba7a0 100%, #1c4480 0%);
+    border-image-slice: 1;
+    /* background-image: linear-gradient(to bottom, #ffffff, #ffffff), linear-gradient(277deg, #5ba7a0 100%, #1c4480 0%); */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 0 10px white;
+  }
+  #exyear:focus {
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-image-source: linear-gradient(277deg, #5ba7a0 50%, #1c4480 50%);
+    border-image-slice: 1;
+    /* background-image: linear-gradient(to bottom, #ffffff, #ffffff), linear-gradient(277deg, #5ba7a0 100%, #1c4480 0%); */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 0 10px white;
+  }
+  #exdate:focus {
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(277deg, #5ba7a0 100%, #1c4480 0%);
+    border-image-slice: 1;
+    /* background-image: linear-gradient(to bottom, #ffffff, #ffffff), linear-gradient(277deg, #5ba7a0 100%, #1c4480 0%); */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 0 10px white;
+  }
+  select.form-control:not([size]):not([multiple]) {
+    height: 48px;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    color: #3b3b3b;
+  }
+  .form-control {
+    width: 381px;
+    height: 48px;
+    border-radius: 6px;
+    border: solid 2px #e3e3e3;
+    background-color: #ffffff;
+  }
+  #exdate {
+    width: 179px;
+    height: 48px;
+    border-radius: 6px;
+    border: solid 2px #e3e3e3;
+    background-color: #ffffff;
+    padding-left: 10px;
+  }
+  #exyear {
+    width: 179px;
+    height: 48px;
+    border-radius: 6px;
+    border: solid 2px #e3e3e3;
+    background-color: #ffffff;
+    padding-left: 10px;
+  }
+  label {
+    height: 25px;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    color: #3b3b3b;
+  }
+  option {
+    height: 25px;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    color: #3b3b3b;
+  }
+  #login-btn {
+    width: 156px;
+    height: 44px;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+  #change-btn {
+    text-align: center;
+  }
+  #Forgot-Username {
+    /* width: 132px; */
+    /* height: 25px; */
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: center;
+    color: #228bc5;
+  }
+  .Dont-have-an-accoun {
+    background-image: linear-gradient(273deg, #5ca7a0, #1c4480 0%);
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.84;
+    letter-spacing: 0.82px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+  }
+  #First-time-visiting {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+  }
+  #register-btn {
+    width: 140px;
+    height: 44px;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #228bc5;
+    border-radius: 30px;
+    background-color: #ffffff;
+  }
+  .change-btn {
+    text-align: center;
+  }
+  .Line {
+    width: 1px;
+    height: 15px;
+    opacity: 0.5;
+    border: solid 1px #979797;
+    margin-top: 5px;
+  }
+  #row-forgot {
+    max-width: 350px;
+    margin-left: 10px;
+  }
+  #mobile-prefix {
+    height: 48px;
+    border: solid 2px #e3e3e3;
+    opacity: 0.5;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    color: #3b3b3b;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+  }
+  

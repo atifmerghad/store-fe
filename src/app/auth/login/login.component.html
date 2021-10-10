@@ -1,1 +1,109 @@
-<p>login works!</p>
+<div class="main">
+    <div class="conatiner-fluid">
+      <button routerLink="/" type="button" class="close" id="path">
+        &times;
+      </button>
+      <div class="container-fluid">
+        <img src="/assets/images/logo.png" id="imglogo" height="45" width="180" />
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="container">
+        <h3 class="Welcome-Back">Welcome Back</h3>
+        <p class="Login-to-your-accoun">Login to your account</p>
+        <br />
+  
+        <div class="row">
+          <div class="main1 p-2">
+            <form  >
+              <div class="form-group">
+                <a class="pull-right"
+                  ><img
+                    id="ic-info"
+                    src="/assets/register/ic_info.png"
+                    height="20"
+                    width="20"
+                /></a>
+                <label id="id-label">User Name</label>
+                <input
+                  type="text"
+                  formControlName="userName"
+                  class="form-control"
+                 
+                  placeholder="Enter Username"
+                />
+                
+              </div>
+              <div class="form-group">
+                <a class="pull-right"
+                  ><img
+                    id="ic-info"
+                    src="/assets/register/ic_info.png"
+                    height="20"
+                    width="20"
+                /></a>
+                <label for="inputPassword">Password</label>
+                <input
+                
+                  formControlName="password"
+                  class="form-control"
+                 
+                  placeholder="Enter password"
+                />
+                <span id="showpass">
+                  <a
+                     
+                    style="color: #228bc5 !important; cursor: pointer;"
+                    >show</a
+                  ></span
+                >
+                <div
+               
+                  class="invalid-feedback"
+                >
+                  
+                </div>
+              </div>
+  
+              <br />
+              <div class="form-group" id="change-btn">
+                <button id="login-btn" class="btn btn-primary">Login</button
+                ><br /><br />
+                <!-- <p><a href="#">Forgot Password</a></p> -->
+              </div>
+  
+              <div class="row justify-content-between" id="row-forgot">
+                <div class="col-xs-6" id="Forgot-Username">
+                  <a routerLink="/forgot-username">Forgot Username </a>
+                </div>
+                <span>
+                  <div class="Line"></div>
+                </span>
+                <div class="col-xs-5" id="Forgot-Username">
+                  <a routerLink="/change-password">Forgot Password</a>
+                </div>
+              </div>
+              <br /><br />
+              <div>
+                <p class="Dont-have-an-accoun">Don't have an account?</p>
+  
+                <p id="First-time-visiting">
+                  First time visiting Al Rajhi Takaful? Let's setup your profile.
+                </p>
+                <div class="change-btn">
+                  <button
+                    id="register-btn"
+                    class="btn btn-outline-primary btn-lg"
+                    routerLink="/register"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

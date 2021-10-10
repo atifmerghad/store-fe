@@ -5,31 +5,66 @@
         </p>
     </div>
 
-   <div  class="header2">
-    <div     class="toolbar" role="banner">
-        <img
-          width="40"
-          alt="Store Logo"
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-        />
-        <span> {{ "name" | translate }}</span>
-        
-        <div class="spacer"></div>
-        
-        <a aria-label="Angular on twitter" rel="noopener" href="#"  routerLink="/login">
-          <span  style=" margin:5px;">Login</span>
-        </a>
-        <a aria-label="Angular on twitter" rel="noopener" href="#"  routerLink="/register">
-          <span  style=" margin:5px;">Register</span>
-        </a>
-          <a aria-label="Angular on twitter" rel="noopener" href="#"   >
-            <span  style=" margin:5px;">AR</span>
-          </a>
-          <a aria-label="Angular on YouTube"   rel="noopener" href="#"  >
-            <span  style=" margin:5px;">EN</span>
-          </a>
+   <nav class="header2 navbar navbar-expand-lg navbar-light" >
+    <div class="container-fluid">
+    <!--  <a class="navbar-brand" href="#">{{ "name" | translate }}</a>-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar navbar-expand-lg justify-content-between" style="width:100%" id="navbarText">
+        <ul class="nav">
+          <li class="nav-item" *ngFor="let item of header2_items">
+            <a class="nav-link active" aria-current="page" href="#">{{ isRtl? item.name_ar:item.name}}</a>
+          </li>
+        </ul>
+        <ul class="nav d-flex flex-row arabic">
+          <span class="navbar-text" style="color: rgb(102, 102, 102); font-size: 12px;margin-top: auto;">
+            <b class="text-danger" >15%</b> {{isRtl? 'خصم على طلبك الأول' :'de réduction sur votre première commande' }}
+          </span>
+
+          <span style="margin:10px" routerLink="/login">
+          <img src="/assets/icons/user_gray.png" width="16px" height="16px"/>
+          </span>
+          <span style="margin:10px" >
+            <img src="/assets/icons/claim_gray.png" width="16px" height="16px"/>
+
+          </span>
+          <span style="margin:10px">
+            <img src="/assets/icons/health_gray.png" width="16px" height="16px"/>
+
+          </span>
+          <span style="margin:10px">
+            <img src="/assets/icons/phone_gray.png" width="16px" height="16px"/>
+
+          </span>
+          <span style="margin:10px" (click)="callParentselectLang()">
+            <img src="/assets/icons/renew_gray.png" width="16px" height="16px"/>
+
+          </span>
+        </ul>
       </div>
-   </div>
+    </div>
+  </nav>
+
+  <nav class="header3 navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="nav">
+        
+          <li class="nav-item" *ngFor="let item of header3_items">
+            <a class="nav-link active" aria-current="page" href="#">{{ isRtl? item.name_ar:item.name}}</a>
+          </li>
+      
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
 </header>
 
 

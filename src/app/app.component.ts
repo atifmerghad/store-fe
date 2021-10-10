@@ -12,33 +12,21 @@ export class AppComponent  implements OnInit{
   supportLanguages = ["en", "ar"];
   currentLang :string= "ar";
   direction : string | undefined;
+  isFullPage: boolean = false;
 
-  products :any= [];
   constructor(
     private productService:ProductService,
     private translateService: TranslateService){
       this.translateService.addLangs(this.supportLanguages);
       this.translateService.setDefaultLang(this.currentLang);
-      this.selectLang("en");
-
+      console.log("LANG : ", productService.currentLang,  localStorage.getItem('currentLang'))
+      const lang =  localStorage.getItem('currentLang');
+      this.selectLang((lang)?lang:"en");
     }
 
     ngOnInit(){
-      this.getProducts();
     }
-
-    getProducts(){
-      this.productService.getProducts().subscribe(
-        (res) =>{
-          console.log(res);
-          this.products = res;
-        },
-        (err) =>{
-
-        }
-      )
-    }
-
+ 
     getCurrentLang() {
       return this.translateService.currentLang;
     }
