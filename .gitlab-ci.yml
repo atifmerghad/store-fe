@@ -1,0 +1,43 @@
+image: node
+
+variables:
+  SURGE_LOGIN: atifmerghad@gmail.com
+  SURGE_TOKEN: d4f2359bbf84f1298353c16b083b6695
+
+stages:
+  - build
+  - test
+  - deploy
+
+build website:
+  stage: build
+  script:
+    - npm install
+    - npm install -g @angular/cli
+    - ng build
+  artifacts:
+    paths:
+      - ./dist
+
+test artifact:
+  image: alpine
+  stage: test
+  script:
+    - grep -q "Store" ./dist/store-fe/index.html
+
+test website:
+  stage: test
+  script:
+    - npm install
+    - npm install -g @angular/cli
+    - ng serve &
+    - sleep 3
+    - curl "http://localhost:4200" | tac | tac | grep -q "Store"
+
+deploy to surge: 
+  stage : deploy
+  script:
+    - echo "LOGIN $SURGE_LOGIN surge."
+    - echo "TOKEN $SURGE_TOKEN surge."
+    - npm install --global surge
+    - surge --project ./dist/store-fe --domain tifo.surge.sh
